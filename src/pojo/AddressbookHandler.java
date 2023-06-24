@@ -5,13 +5,13 @@ import data.ContactFileHandler;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddressBook {
+public class AddressbookHandler {
     private List<Contact> contacts;
     private ContactFileHandler contactFileHandler;
 
 
 
-    public AddressBook() {
+    public AddressbookHandler() {
         contacts = new ArrayList<>();
         contactFileHandler = new ContactFileHandler();
         contacts.addAll(contactFileHandler.loadContacts("contacts.con"));

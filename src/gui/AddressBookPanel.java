@@ -1,6 +1,6 @@
 package gui;
 
-import pojo.AddressBook;
+import pojo.AddressbookHandler;
 import pojo.Contact;
 
 import javax.swing.*;
@@ -17,7 +17,7 @@ public class AddressBookPanel extends JPanel {
 	private static final long serialVersionUID = 1L;
 	private JTable table;
     private DefaultTableModel model;
-    private AddressBook addressBook;
+    private AddressbookHandler addressBook;
     private JTextField nameField;
     private JTextField streetField;
     private JTextField cityField;
@@ -26,7 +26,7 @@ public class AddressBookPanel extends JPanel {
     private JTextField phoneField;
     private JMenuItem updateItem;
 
-    public AddressBookPanel(AddressBook addressBook) {
+    public AddressBookPanel(AddressbookHandler addressBook) {
         this.addressBook = addressBook;
         initComponents();
     }

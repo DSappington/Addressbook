@@ -1,18 +1,18 @@
 package gui;
 
 
-import pojo.AddressBook;
+import pojo.AddressbookHandler;
 
 import javax.swing.*;
 
 public class AddressBookGUI extends JFrame {
 
 	private static final long serialVersionUID = 1L;
-	private AddressBook addressBook;
+	private AddressbookHandler addressBook;
     private AddressBookPanel addressBookPanel;
 
     public AddressBookGUI() {
-        addressBook = new AddressBook();
+        addressBook = new AddressbookHandler();
         addressBookPanel = new AddressBookPanel(addressBook);
 
         // add panel to the gui
